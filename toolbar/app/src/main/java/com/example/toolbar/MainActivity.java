@@ -20,11 +20,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        if (item.getItemId()==R.id.itm1)
-            Toast.makeText(this,"item1",Toast.LENGTH_LONG).show();
-        else
-            if(item.getItemId()==R.id.itm2)
-                Toast.makeText(this,"item2",Toast.LENGTH_LONG).show();
+        if (item.getItemId() == R.id.itm1)
+            Toast.makeText(this, "item1", Toast.LENGTH_LONG).show();
+        else if (item.getItemId() == R.id.itm2)
+            Toast.makeText(this, "item2", Toast.LENGTH_LONG).show();
+        else if (item.getItemId() == android.R.id.home) {
+            finish();
+        }
+
 
         return super.onOptionsItemSelected(item);
     }
@@ -36,5 +39,6 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
