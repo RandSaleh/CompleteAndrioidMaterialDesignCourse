@@ -3,9 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drowerLayout"
     android:fitsSystemWindows="true"
-    >
+    tools:openDrawer="start">
+
 <include layout="@layout/activity_main"/>
 
     <android.support.design.widget.NavigationView
@@ -14,6 +17,8 @@
         android:id="@+id/navigationview"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu"
         />
 
 
