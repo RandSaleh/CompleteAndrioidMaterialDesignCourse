@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/inbox"
+            android:title="inbox" />
+
+        <item
+            android:id="@+id/starred"
+            android:title="starred" />
+
+        <item
+            android:id="@+id/sendemail"
+            android:title="Send Email" />
+        <item
+            android:id="@+id/draft"
+            android:title="Draft" />
+    </group>
+    <item android:title="Subheader">
+        <menu>
+            <item
+                android:id="@+id/allMail"
+                android:title="All mail" />
+            <item
+                android:id="@+id/trash"
+                android:title="trash" />
+            <item
+                android:id="@+id/spam"
+                android:title="Spam" />
+
+        </menu>
+
+    </item>
+
+</menu>
